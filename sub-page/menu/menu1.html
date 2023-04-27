@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버무리 떡볶이</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="shortcut icon" href="images/Burmurry/burmurry_favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/menu1-layout.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/menu1.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+
+      <!-- header -->
+      <header>
+        <!-- logo -->
+        <div class="logo"><a href="../../index.html">
+          <img src="images/Burmurry/logo-color.png" alt="">
+        </a></div>
+
+        <!-- navigation -->
+        <div class="nav-wrap">
+          <nav class="clear">
+            <a href="../brand/brand.html" class="nav fl">브랜드</a>
+            <a href="../menu/menu1.html" class="nav fl click-nav">메뉴</a>
+            <a href="../map/map.html" class="nav fl">매장안내</a>
+            <a href="../notice/notice.html" class="nav fl">공지사항</a>
+          </nav>
+        </div>
+
+        <!-- sns -->
+        <div class="sns-wrap">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </header>
+
+      <!-- contents -->
+      <div class="banner">
+        <h3>메 뉴</h3>
+      </div>
+      <div class="contents-wrap">
+
+        <div class="set-box">
+          <div class="set-title">세트메뉴</div>
+          <div class="set-line"></div>
+        </div>
+
+        <div class="set-con-box">
+          <div class="set-con">
+            <div class="set-img set-img1"></div>
+            <div class="set-img set-img2"></div>
+          </div>
+        </div>
+
+        <div class="tab-box">
+            <button class="tab-btn active">떡볶이</button>
+            <button class="tab-btn">튀김</button>
+            <button class="tab-btn">밥/면</button>
+            <button class="tab-btn">기타</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="content-box">
+            <div class="content active">
+                <div class="img1 img1-1">
+                  <p>버무리 떡볶이</p>
+                </div>
+                <div class="img1 img1-2">
+                  <p>매운 떡볶이</p>
+                </div>
+                <div class="img1 img1-3">
+                  <p>로제 떡볶이</p>
+                </div>
+                <div class="img1 img1-4">
+                  <p>반반 떡볶이</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img2 img2-1">
+                  <p>모듬튀김</p>
+                </div>
+                <div class="img2 img2-2">
+                  <p>야채튀김</p>
+                </div>
+                <div class="img2 img2-3">
+                  <p>새우튀김</p>
+                </div>
+                <div class="img2 img2-4">
+                  <p>고추튀김</p>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="img3 img3-1">
+                  <p>꼬마김밥</p>
+                </div>
+                <div class="img3 img3-2">
+                  <p>유부우동</p>
+                </div>
+                <div class="img3 img3-3">
+                  <p>메밀소바</p>
+                </div>
+                <div class="img3 img3-4">
+                  <p>쫄면</p>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="img4 img4-1">
+                  <p>찰순대</p>
+                </div>
+                <div class="img4 img4-2">
+                  <p>꼬치어묵</p>
+                </div>
+                <div class="img4 img4-3">
+                  <p>순살 치킨 강정</p>
+                </div>
+                <div class="img4 img4-4">
+                  <p>허니 버터 치즈볼</p>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="txt-f">
+          <p>(주)이플푸드 | 서울특별시 양천구 신정동 888-37 목오빌딩 6층 TEL 02-2694-7602 FAX 02-2694-7603 CALL 1688-7602 <br>Copyright &copy;  Website by <strong>YONG HYEON JU</strong>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+    <script>
+    const tabs = document.querySelectorAll('.tab-btn');
+    const all_content = document.querySelectorAll('.content');
+
+    tabs.forEach((tab,index)=>{
+      tab.addEventListener('click', (e)=> {
+        tabs.forEach(tab=>{tab.classList.remove('active')});
+        tab.classList.add('active');
+
+        var line = document.querySelector('.line');
+      line.style.width = e.target.offsetWidth + "px";
+      line.style.left = e.target.offsetLeft + "px";
+
+      all_content.forEach(content=>{content.classList.remove('active')});
+      all_content[index].classList.add('active');
+    })
+      })
+  </script>
+</body>
+</html>

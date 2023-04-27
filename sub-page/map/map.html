@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버무리 떡볶이</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="shortcut icon" href="burmurry_favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/map-layout.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+
+      <!-- header -->
+      <header>
+        <!-- logo -->
+        <div class="logo"><a href="../../index.html">
+          <img src="logo-color.png" alt="">
+        </a></div>
+
+        <!-- navigation -->
+        <div class="nav-wrap">
+          <nav class="clear">
+            <a href="../brand/brand.html" class="nav fl">브랜드</a>
+            <a href="../menu/menu1.html" class="nav fl">메뉴</a>
+            <a href="map.html" class="nav fl click-nav">매장안내</a>
+            <a href="../notice/notice.html" class="nav fl">공지사항</a>
+          </nav>
+        </div>
+
+        <!-- sns -->
+        <div class="sns-wrap">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </header>
+
+      <!-- contents -->
+      <div class="banner">
+        <h3>매 장</h3>
+      </div>
+      <div class="contents-wrap">
+        <p>전국의 버무리 배장을 찾아보세요!</p>
+
+        <div class="select-wrap ">
+          <select name="area" id="area">
+            <option selected disabled>도/시 선택</option>
+            <option value="seoul">서울</option>
+            <option value="busan">부산</option>
+            <option value="daegu">대구</option>
+            <option value="incheon">인천</option>
+            <option value="gwangju">광주</option>
+            <option value="daejeon">대전</option>
+            <option value="sejong">세종</option>
+            <option value="ulsan">울산</option>
+            <option value="gyeonggi">경기</option>
+            <option value="gangwon">강원</option>
+            <option value="chungbuk">충북</option>
+            <option value="chungnam">충남</option>
+            <option value="jeonbuk">전북</option>
+            <option value="jeonnam">전남</option>
+            <option value="gyeongbuk">경북</option>
+            <option value="gyeongnam">경남</option>
+            <option value="jeju">제주</option>
+          </select>
+
+          <select name="area2" id="area2">
+            <option selected disabled>군/구 선택</option>
+          </select>
+
+          <div class="form">
+            <input type="text" class="shop" placeholder="매장명 검색하기">
+          </div>
+        </div>
+
+        <div class="map-area">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.716683380536!2d126.71651468158429!3d37.49101160001234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c4667691b17%3A0xb9741703ccf686a4!2z67KE66y066asIOu2gO2PieyngeyYgeygkA!5e0!3m2!1sko!2skr!4v1681698553173!5m2!1sko!2skr" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="txt-f">
+          <p>(주)이플푸드 | 서울특별시 양천구 신정동 888-37 목오빌딩 6층 TEL 02-2694-7602 FAX 02-2694-7603 CALL 1688-7602 <br>Copyright &copy;  Website by <strong>YONG HYEON JU</strong>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

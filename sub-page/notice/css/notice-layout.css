@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap');
+@import url(style.css);
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+body * {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+  line-height: 1.5;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+}
+.fl {float: left;}
+.fr {float: right;}
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* 레이아웃 */
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+    position: fixed;
+    z-index: 10;
+}
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: #AB3636;
+    position: relative;
+    top: 80px;
+}
+.contents-wrap {
+    width: 1200px;
+    height: 700px;
+    background-color: #fff;
+    margin: auto;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    top: 80px;
+}
+footer {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    top: 80px;
+}
+
+
+
+
+/* 헤더 */
+.logo {
+    margin-left: 100px;
+    padding-top: 10px;
+  }
+  nav {
+    width: 700px;
+    height: 80px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    left: 90px;
+  }
+  .nav {
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    top: -67px;
+  }
+  .nav::after {
+    content: '';
+    position: absolute;
+    background-color: #D03B27;
+    height: 3px;
+    width: 0;
+    bottom: -10px;
+    left: 0px;
+    transition: 0.3s;
+  }
+  .nav:hover {
+    color: #D03B27;
+  }
+  .nav:hover:after {
+    width: 100%;
+  }
+  .click-nav::after {
+    content: '';
+    position: absolute;
+    background-color: #D03B27;
+    height: 3px;
+    width: 100%;
+    bottom: -10px;
+    left: 0px;
+  }
+  .click-nav {
+    color: #D03B27;
+  }
+
+
+  .sns-wrap {
+    width: 120px;
+    height: 80px;
+    position: relative;
+    top: -146px;
+    left: 1700px;
+  }
+  .fa-brands {
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 10px;
+    line-height: 60px;
+    color: #D67D71;
+  }
+  .fa-brands:hover {
+    color: #D03B27;
+    transition: all 0.4s;
+  }
+
+
+    /* contents */
+.banner h3 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 36px;  
+    padding: 80px;
+    color: #fff;
+}
+
+/* 푸터 */
+footer {
+  border-top: 1px solid rgba(153, 153, 153, 0.5);
+  background-color: #fff;
+}
+footer p {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 25px;
+  color: #888;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    left: 200px;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .contents-wrap {
+    width: 1200px;
+  }
+}
+@media (max-width: 1000px) {
+  .contents-wrap {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .contents-wrap {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
